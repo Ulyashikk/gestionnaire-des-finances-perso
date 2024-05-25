@@ -27,7 +27,7 @@ public class DialogDepensesWindow {
         control = new DepensesController(manager, this);
     }
     
-    public void addRevenue(DefaultListModel pastDepenses, DefaultListModel upcomingDepenses){
+    public void addDepense(DefaultListModel pastDepenses, DefaultListModel upcomingDepenses){
         Depense depense = view.getNewDepenseInput(); 
         if (depense.getDate().before(new Date()) && depense.verifDepense(depense)) {
             control.ajouterDepense(depense);
@@ -38,7 +38,7 @@ public class DialogDepensesWindow {
         updateRevenueTotal();
     }
     
-    public void deleteRevenue(int indexPast, int indexAvenir, 
+    public void deleteDepense(int indexPast, int indexAvenir, 
             DefaultListModel pastDepenses, DefaultListModel upcomingDepenses){
         if (indexPast != -1) {
             control.deleteDepense(indexPast);
@@ -51,7 +51,7 @@ public class DialogDepensesWindow {
         updateRevenueTotal();
     }
     
-    public void modifierRevenue(int indexPast, int indexAvenir, 
+    public void modifierDepense(int indexPast, int indexAvenir, 
             DefaultListModel pastDepenses, DefaultListModel upcomingDepenses){
         Depense existe, revenue;
         

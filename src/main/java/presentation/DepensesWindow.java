@@ -240,15 +240,15 @@ public class DepensesWindow extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ajouterDepenseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ajouterDepenseButtonActionPerformed
-        dialog.addRevenue(pastExpensesModel, upcomingExpensesModel);
+        dialog.addDepense(pastExpensesModel, upcomingExpensesModel);
     }//GEN-LAST:event_ajouterDepenseButtonActionPerformed
 
     private void deleteDepenseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteDepenseButtonActionPerformed
-        dialog.deleteRevenue(depensesList.getSelectedIndex(), avenirList.getSelectedIndex(), pastExpensesModel, upcomingExpensesModel);
+        dialog.deleteDepense(depensesList.getSelectedIndex(), avenirList.getSelectedIndex(), pastExpensesModel, upcomingExpensesModel);
     }//GEN-LAST:event_deleteDepenseButtonActionPerformed
 
     private void modifierDepenseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modifierDepenseButtonActionPerformed
-        dialog.modifierRevenue(depensesList.getSelectedIndex(), avenirList.getSelectedIndex(), pastExpensesModel, upcomingExpensesModel);
+        dialog.modifierDepense(depensesList.getSelectedIndex(), avenirList.getSelectedIndex(), pastExpensesModel, upcomingExpensesModel);
     }//GEN-LAST:event_modifierDepenseButtonActionPerformed
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
